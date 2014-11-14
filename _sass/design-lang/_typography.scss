@@ -1,0 +1,152 @@
+$IBM-HELVETICA-LIGHT: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Roboto", sans-serif;
+
+$base-font-size: 14em/14 !default;
+
+$line-height-ratio: 1.618;
+$font-scale: 1.25;
+
+.main-font{
+	font-family: $IBM-HELVETICA-LIGHT;
+}
+
+.mono-font{
+	font-family: $IBM-HELVETICA-LIGHT;
+}
+
+
+.heading{
+	text-rendering: optimizelegibility;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+
+
+
+@function pow($base, $exponents) {
+  $value: 1;
+ 	
+ 	@if $exponents > 0{
+ 		@for $i from 1 through $exponents {
+    		$value: $value * $base;
+  		}
+ 	}	
+ 	@else{
+ 		@for $i from 1 through abs($exponents) {
+    		$value: $value / $base;
+  		}
+ 	}
+
+ 
+  @return $value;
+}
+
+@mixin font-scale($scale){
+  		font-size: 1em*pow($font-scale,$scale);
+  		line-height: 1em*pow($font-scale,$scale);
+}
+@mixin font-size($size){
+      font-size: ($size/16)*1em;
+}
+
+
+
+body {
+  	color: $text-color;
+  	@extend .main-font;
+  	font-size:$base-font-size;
+}
+
+h1 {
+ 	@include font-scale(3);
+ 	@extend .heading;
+}
+
+h2, section > h1 {
+ 	@include font-scale(2);	
+ 	@extend .heading;
+}
+
+h3, section > h2, section section h1 {
+ 	@include font-scale(1);
+ 	@extend .heading;
+}
+
+h4, section > h3, section section h2, section section section h1 {
+ 	@include font-scale(0);
+ 	@extend .heading;
+}
+
+h5, section > h4, section section h3 {
+	@include font-scale(-1);
+	@extend .heading;
+}
+
+h6, section > h5, section section h4, section section section h3 {
+ 	@include font-scale(-2);
+  	@extend .heading;
+}
+
+section > h6, section section h5, section section section h4 {
+ 	@include font-scale(-3);
+  	@extend .heading;
+}
+
+section section h6, section section section h5 {
+ 	@include font-scale(-4);
+  	@extend .heading;
+}
+
+
+p, article blockquote, ul, ol { margin-bottom: 1.5em; }
+
+ul { list-style-type: disc;
+  ul { list-style-type: circle; margin-bottom: 0px;
+    ul { list-style-type: square; margin-bottom: 0px; }}}
+
+ol { list-style-type: decimal;
+  ol { list-style-type: lower-alpha; margin-bottom: 0px;
+    ol { list-style-type: lower-roman; margin-bottom: 0px; }}}
+
+ul, ol { &, ul, ol { margin-left: 1.3em; }}
+ul, ol { ul, ol { margin-bottom: 0em; }}
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+sup, sub { font-size: 0.75em; position: relative;  display: inline-block; padding: 0 .2em; line-height: .8em;}
+sup { top: -.5em; }
+sub { bottom: -.5em; }
+
+a{ text-decoration: none;}
+
+q { font-style: italic;
+  &:before { content: "\201C"; }
+  &:after { content: "\201D"; }
+}
+
+em, dfn { font-style: italic; }
+
+strong, dfn { font-weight: bold; }
+
+del, s { text-decoration: line-through; }
+
+abbr, acronym { border-bottom: 1px dotted; cursor: help; }
+
+pre, code, tt { @extend .mono-font; }
+
+hr { margin-bottom: 0.2em; }
+
+small { @include font-scale(-1); }
+
+big { @include font-scale(-1); }
+
+/* @extend this to force long lines of continuous text to wrap */
+.force-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

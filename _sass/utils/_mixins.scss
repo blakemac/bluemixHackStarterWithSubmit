@@ -1,0 +1,34 @@
+@mixin border-radius($radius: 3px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-radius-bottom($radius: 3px) {
+  -webkit-border-radius: 0 0 $radius $radius;
+     -moz-border-radius: 0 0 $radius $radius;
+      -ms-border-radius: 0 0 $radius $radius;
+       -o-border-radius: 0 0 $radius $radius;
+          border-radius: 0 0 $radius $radius;
+}
+
+@mixin border-radius-right($radius: 3px) {
+          border-radius: 0 $radius $radius 0;
+}
+
+@mixin border-radius-left($radius: 3px) {
+          border-radius: $radius 0 0 $radius;
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}

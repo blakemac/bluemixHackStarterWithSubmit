@@ -1,0 +1,76 @@
+
+.IBMtitle {
+	font-family: $IBM-HELVETICA-LIGHT;
+	font-size: .8em;
+
+}
+
+.Bluemixtitle {
+	font-weight: bold;
+	font-size: .8em;
+}
+
+.subpagetitle {
+	font-weight: bold;
+	font-size: .6em;
+	
+}
+
+h1 {
+	text-align: left;
+	padding: 0 0 0 4em;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+ul li {
+	color: $text-color-light;
+	list-style:	lower-alpha;
+	line-height: 1.5em !important;
+}
+
+.footer {
+	font-size: .8em;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.white {
+	color: $text-color-mid;
+}
+
+.off-white {
+	color: $text-color-mid;
+}
+
+.green {
+	color: $text-color-green;
+}
+
+.dkblue {
+	color: $text-color-dkblue;
+}
+
+.dkpurple {
+	color: $text-color-dkpurple;
+}
+
+.navygrey {
+	color: $text-color;
+}
+
+.coral {
+	color: $text-color-coral;
+}
+
+.teal {
+	color: $text-color-teal;
+}

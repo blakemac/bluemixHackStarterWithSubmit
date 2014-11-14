@@ -1,0 +1,56 @@
+$text-color: #3b4b54 !default;
+$text-color-light: #fff !default;
+$text-color-mid: #e3edf5;
+$text-color-green: #56bb66;
+$text-color-dkpurple: #58607a;
+$text-color-dkblue: #26343F;
+$text-color-coral: #f47d64;
+$text-color-teal: #00B299;
+
+$Bluemix-T-Blue: #155d70;
+$Bluemix-T-Green: #56bb66;
+$Bluemix-T-Coral: #f47d64;
+$Bluemix-T-DarkPurple: #58607a;
+$Bluemix-T-LightPurple: #8781bd;
+
+$Bluemix-P-DarkBlue: #26343F;
+$Bluemix-P-OffWhite: #e3edf5;
+$Bluemix-P-LightBlue: #00aed1;
+$Bluemix-P-NavyGrey: #3b4b54;
+
+.blue-bg {
+	background-color: $Bluemix-T-Blue;
+}
+
+.green-bg {
+	background-color: $Bluemix-T-Green;
+}
+
+.dkpurple-bg {
+	background-color: $Bluemix-T-DarkPurple;
+}
+
+.ltpurple-bg {
+	background-color: $Bluemix-T-LightPurple;
+}
+
+.ltblue-bg {
+	background-color: $Bluemix-P-LightBlue;
+}
+
+.dkblue-bg {
+	background-color: $Bluemix-P-DarkBlue;
+}
+
+.coral-bg {
+	background-color: $Bluemix-T-Coral;
+}
+
+.offwhite-bg {
+	background-color: $Bluemix-P-OffWhite;
+}
+
+.dark-bg {
+	background-color: $Bluemix-P-NavyGrey;
+}
+

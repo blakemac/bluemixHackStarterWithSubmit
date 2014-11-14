@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 88.2 74" style="enable-background:new 0 0 88.2 74;" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#xA9; 2003 - 2006 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Copyright &#xA9; 1988, 1990, 1993 Adobe Systems Incorporated. All Rights Reserved. Helvetica is a trademark of Heidelberger Druckmaschinen AG, exclusively licensed through Linotype GmbH, and may be registered in certain jurisdictions. This typeface is original artwork of Linotype Design Studio. The design may be protected in certain jurisdictions. -->
+<font-face font-family="HelvNeueBoldforIBM" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="496" d="M270,117l0,67l-56,0l0,-67M263,234C263,269 265,293 269,306C273,319 287,336 312,358C363,405 375,435 375,478C375,557 322,609 251,609C179,609 125,567 116,472l50,-8C174,532 207,559 248,559C289,559 324,522 324,474C324,449 317,432 274,391C252,369 237,349 228,332C219,315 215,288 215,251l2,-17M42,50l0,617l412,0l0,-617M-8,718l0,-718l512,0l0,718z"/>
+<glyph unicode="1" horiz-adv-x="427" d="M358,700l-113,0C229,593 139,558 40,561l0,-107l176,0l0,-454l142,0z"/>
+</font>
+
+	<g>
+	<polygon style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" points="22.2,73.5 0.5,37 22.2,0.5 65.8,0.5 87.5,37 65.8,73.5 	
+		"/>
+	<rect x="34.5" y="22.5" style="fill:none;" width="67" height="87"/>
+	<text transform="matrix(1 0 0 1 34.5 48.2036)" style="fill:#FFFFFF; font-family:'HelvNeueBoldforIBM'; font-size:36;">1</text>
+</g>
+</svg>

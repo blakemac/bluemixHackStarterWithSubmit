@@ -1,0 +1,110 @@
+.logo {
+	position: absolute;
+	left: 1em;
+	top: .75em;
+	display: inline-block;
+}
+
+.pagetitle {
+	position: absolute;
+	left: 4em;
+	top: 1.2em;
+	width: 200px;
+}
+
+.pagetitle img {
+	display: inline-block;
+	padding: 15px 15px 0 0;
+}
+.header {
+	height: 55px;
+}
+
+.title {
+	padding: 2em 0;
+}
+
+.secondarytitle {
+	padding: 3em 0 2em 0;
+	font-weight: normal !important;
+}
+
+.pad-left {
+	padding-left: 2em;
+	}
+
+.pad-right {
+	padding-right: 2em;
+}
+
+.pad-leftx2 {
+	padding-left: 8em;
+	}
+
+.pad-rightx2 {
+	padding-right: 8em;
+}
+
+.border-right {
+	border-right: 1px solid rgba(148, 163, 171, 0.25);
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(148, 163, 171, 0.25);
+}
+
+.contentblock {
+	padding-top: 4em;
+}
+
+.checkin {
+	padding: 3em 25%;
+}
+
+ul {
+	padding-bottom: 2em;
+}
+
+ul li {
+	line-height: 2em;
+}
+
+.centeredbutton {
+	margin: 0 auto;
+	width: 9em !important;
+}
+
+.button {
+	padding-top: 1.5em;
+	display: block;
+	padding-bottom: 3em;
+}
+.row3buttons {
+	padding-bottom: 5em;
+}
+
+.alignbottom {
+	vertical-align: bottom;
+	padding-top: 5.5em;
+}
+
+.button a {
+	color: #ffffff;
+	font-weight: bold;
+	border: 1px solid #ffffff;
+	width: 8em !important; 
+	padding: 1em;
+	text-align: center;
+	display: block;
+}
+
+.button a:hover {
+	color: $text-color;
+	background-color: #ffffff;
+	border: none;
+	font-weight: bold;
+	width: 100%; 
+	padding: 1em;
+	text-align: center;
+
+}

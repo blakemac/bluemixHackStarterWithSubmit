@@ -1,0 +1,57 @@
+@mixin text-centered($name: "") {
+  $sep: "-";
+  @if $name == "" {
+    $sep: "";
+  }
+  .u-#{$name}#{$sep}text-centered {
+      text-align:center !important;
+  }
+}
+
+@include text-centered();
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 2);
+  @include breakpoint($name) {
+    @include text-centered($name);
+  }
+}
+
+@mixin text-left($name: "") {
+  $sep: "-";
+  @if $name == "" {
+    $sep: "";
+  }
+  .u-#{$name}#{$sep}text-left {
+      text-align:left;
+  }
+}
+
+@include text-left();
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 2);
+  @include breakpoint($name) {
+    @include text-left($name);
+  }
+}
+
+@mixin text-right($name: "") {
+  $sep: "-";
+  @if $name == "" {
+    $sep: "";
+  }
+  .u-#{$name}#{$sep}text-right {
+      text-align:right;
+  }
+}
+
+@include text-right();
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 2);
+  @include breakpoint($name) {
+    @include text-right($name);
+  }
+}
+
